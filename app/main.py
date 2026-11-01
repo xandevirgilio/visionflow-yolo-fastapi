@@ -28,6 +28,18 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+from contextlib import asynccontextmanager
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Lifespan context manager to preload YOLO model before serving requests."""
+    logger.info("Initializing YOLO model on startup...")
+    YOLODetector.get_instance()
+    logger.info("YOLO model ready for inference.")
+    yield
+
+
 # Initialize FastAPI app
 app = FastAPI(
     title=APP_TITLE,
@@ -35,6 +47,7 @@ app = FastAPI(
     version=APP_VERSION,
     docs_url="/docs",
     redoc_url="/redoc",
+    lifespan=lifespan,
 )
 
 # Enable CORS for web clients / integration
@@ -45,14 +58,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
-@app.on_event("startup")
-def startup_event():
-    """Preload YOLO model on application startup to eliminate cold-start latency."""
-    logger.info("Initializing YOLO model on startup...")
-    YOLODetector.get_instance()
-    logger.info("YOLO model ready for inference.")
 
 
 @app.get("/", tags=["Health"])
