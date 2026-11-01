@@ -193,6 +193,8 @@ O planejamento de tarefas foi realizado através do Trello, estruturado nas segu
 
 ## 👨‍💻 Autor
 
-* **Alexandre Virgílio**
-* Programa SC-TEC / SENAI Santa Catarina
-* Professor Responsável: Welington Souza (`welington.souza@edu.sc.senai.br`)
+* **Alexandre Virgílio** ([@xandevirgilio](https://github.com/xandevirgilio))
+* **E-mail:** `alexandrevirgilio1986@gmail.com`
+* **Programa:** SC-TEC / SENAI Santa Catarina (Módulo 2 - Visão Computacional)
+* **Professor Responsável:** Welington Souza (`welington.souza@edu.sc.senai.br`)
+
