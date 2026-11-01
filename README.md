@@ -13,7 +13,7 @@ Microserviço backend de alto desempenho para detecção de objetos em tempo rea
 ## 📌 Links do Projeto
 
 * 🌐 **Repositório GitHub:** [https://github.com/xandevirgilio/visionflow-yolo-fastapi](https://github.com/xandevirgilio/visionflow-yolo-fastapi)
-* 📋 **Quadro Kanban (Trello):** *(Insira aqui o link público do seu Trello após criar)*
+* 📋 **Quadro Kanban (Trello):** [https://trello.com/b/VDn4MM2I/visionflow-ai-detecção-de-objetos-sc-tec-senai](https://trello.com/b/VDn4MM2I/visionflow-ai-detecção-de-objetos-sc-tec-senai)
 * 🎥 **Vídeo de Demonstração (YouTube / Drive):** *(Insira aqui o link do vídeo gravado)*
 
 ---
