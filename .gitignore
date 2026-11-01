@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# PyTorch / Ultralytics cache & runs
+runs/
+*.log
+.pytest_cache/
+*.pt
+
+# Dataset cache / downloads (if downloaded externally)
+data/downloads/
+data/cache/
